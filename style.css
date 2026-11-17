@@ -1843,7 +1843,28 @@ dialog p {
     }
 
     .letter-signature>strong {
-        font-size: 32px
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: clamp(23px, 6vw, 28px);
+        line-height: 1.25;
+        margin-top: 10px
+    }
+
+    .letter-signature>strong span {
+        display: block;
+        white-space: nowrap
+    }
+
+    .letter-signature>strong i {
+        display: block;
+        font-size: 20px;
+        line-height: 1.1;
+        margin: 3px 0;
+        color: #b29c69;
+        font-style: italic
     }
 
     .gallery-stage {
