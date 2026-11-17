@@ -1,17 +1,17 @@
 // Replace only these values when the real wedding details are ready.
 // Use ISO date/time with timezone, for example 2027-02-14T06:30:00+05:30.
 window.WEDDING_CONFIG = {
-  groom: 'Bala',
-  bride: 'Indu',
-  groomParents: '',
-  brideParents: '',
-  groomPhoto: '',
-  bridePhoto: '',
-  ceremonyDate: '',
-  locationLabel: 'A beautiful celebration awaits',
+  groom: 'Bala Subramani',
+  bride: 'Indu Mathi',
+  groomParents: 'Son of Mr. Balakumar & Mrs. Maheswari',
+  brideParents: 'Daughter of Mr. Jeyakumar & Mrs. Pankajavalli',
+  groomPhoto: 'assets/bala.png?v=4',
+  bridePhoto: 'assets/bride.webp?v=4',
+  ceremonyDate: '2026-12-13T06:30:00+05:30',
+  locationLabel: 'Sri Vasavi Mahal, Pollachi',
   events: [
-    { id: 'wedding', title: 'Wedding ceremony', subtitle: 'Sacred vows. A lifetime of togetherness.', date: '', time: '', venue: '', address: '', mapUrl: '' },
-    { id: 'reception', title: 'Wedding reception', subtitle: 'An evening of love, laughter & celebration.', date: '', time: '', venue: '', address: '', mapUrl: '' }
+    { id: 'wedding', title: 'Wedding ceremony', subtitle: 'Sacred vows. A lifetime of togetherness.', date: '2026-12-13', time: '6.30 AM to 7.30 AM', venue: 'Sri Vasavi Mahal, Pollachi', address: '', mapUrl: 'https://maps.google.com/?q=Sri+Vasavi+Mahal+Pollachi' }
+
   ],
   rsvpPhone: '',
   gallery: [],
