@@ -22,10 +22,26 @@ if (config.groomParents) $('#groom-family').textContent = config.groomParents;
 if (config.brideParents) $('#bride-family').textContent = config.brideParents;
 function portrait(selector, url, name) {
   if (!safeUrl(url) || !url) return;
-  const image = new Image(); image.alt = name; image.loading = 'lazy'; image.src = safeUrl(url);
-  image.onload = () => { const parent = $(selector); parent.replaceChildren(image); };
+  const image = new Image();
+  image.alt = name;
+  image.loading = 'lazy';
+  image.onload = () => {
+    const parent = $(selector);
+    if (parent) parent.replaceChildren(image);
+  };
+  image.onerror = () => {
+    if (url.includes('bala.webp')) {
+      portrait(selector, 'assets/Bala.png', name);
+    } else if (url.includes('Bala.png')) {
+      portrait(selector, 'assets/bala.png', name);
+    } else if (url.includes('bride.webp')) {
+      portrait(selector, 'assets/bride.jpg', name);
+    }
+  };
+  image.src = safeUrl(url);
 }
-portrait('#groom-portrait', config.groomPhoto, config.groom); portrait('#bride-portrait', config.bridePhoto, config.bride);
+portrait('#groom-portrait', config.groomPhoto, config.groom);
+portrait('#bride-portrait', config.bridePhoto, config.bride);
 all('.name-line').forEach(line => { const name = line.textContent; line.textContent = ''; line.setAttribute('aria-label', name);[...name].forEach((letter, index) => { const span = document.createElement('span'); span.textContent = letter === ' ' ? '\u00a0' : letter; span.style.setProperty('--letter-index', index); span.setAttribute('aria-hidden', 'true'); line.append(span); }); });
 function formatDate(value) { if (!value) return ''; const date = new Date(value.length === 10 ? `${value}T12:00:00` : value); return Number.isNaN(date.getTime()) ? '' : new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'Asia/Kolkata' }).format(date); }
 if (config.locationLabel) $('[data-location]').textContent = config.locationLabel;

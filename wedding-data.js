@@ -5,8 +5,8 @@ window.WEDDING_CONFIG = {
   bride: 'Indu Mathi',
   groomParents: 'Son of Mr. Balakumar & Mrs. Maheswari',
   brideParents: 'Daughter of Mr. Jeyakumar & Mrs. Pankajavalli',
-  groomPhoto: 'assets/bala.png?v=4',
-  bridePhoto: 'assets/bride.webp?v=4',
+  groomPhoto: 'assets/bala.webp?v=5',
+  bridePhoto: 'assets/bride.webp?v=5',
   ceremonyDate: '2026-12-13T06:30:00+05:30',
   locationLabel: 'Sri Vasavi Mahal, Pollachi',
   events: [
