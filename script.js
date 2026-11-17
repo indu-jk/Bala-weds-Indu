@@ -42,7 +42,34 @@ function portrait(selector, url, name) {
 }
 portrait('#groom-portrait', config.groomPhoto, config.groom);
 portrait('#bride-portrait', config.bridePhoto, config.bride);
-all('.name-line').forEach(line => { const name = line.textContent; line.textContent = ''; line.setAttribute('aria-label', name);[...name].forEach((letter, index) => { const span = document.createElement('span'); span.textContent = letter === ' ' ? '\u00a0' : letter; span.style.setProperty('--letter-index', index); span.setAttribute('aria-hidden', 'true'); line.append(span); }); });
+all('.name-line').forEach(line => {
+  const name = line.textContent.trim();
+  line.textContent = '';
+  line.setAttribute('aria-label', name);
+  let globalIndex = 0;
+  const words = name.split(/\s+/);
+  words.forEach((word, wIdx) => {
+    const wordSpan = document.createElement('span');
+    wordSpan.className = 'name-word';
+    wordSpan.style.display = 'inline-block';
+    wordSpan.style.whiteSpace = 'nowrap';
+    [...word].forEach(letter => {
+      const span = document.createElement('span');
+      span.textContent = letter;
+      span.style.setProperty('--letter-index', globalIndex++);
+      span.setAttribute('aria-hidden', 'true');
+      wordSpan.append(span);
+    });
+    line.append(wordSpan);
+    if (wIdx < words.length - 1) {
+      const spaceSpan = document.createElement('span');
+      spaceSpan.innerHTML = '&nbsp;';
+      spaceSpan.setAttribute('aria-hidden', 'true');
+      line.append(spaceSpan);
+      globalIndex++;
+    }
+  });
+});
 function formatDate(value) { if (!value) return ''; const date = new Date(value.length === 10 ? `${value}T12:00:00` : value); return Number.isNaN(date.getTime()) ? '' : new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'Asia/Kolkata' }).format(date); }
 if (config.locationLabel) $('[data-location]').textContent = config.locationLabel;
 const weddingTime = config.ceremonyDate ? Date.parse(config.ceremonyDate) : NaN;

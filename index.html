@@ -29,7 +29,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=22">
+  <link rel="stylesheet" href="style.css?v=23">
   <title>Bala Subramani weds Indu Mathi | With love & blessings</title>
   <style>
     .event-grid {
@@ -96,6 +96,11 @@
       padding: 0 !important;
     }
 
+    .name-line {
+      display: block !important;
+      white-space: nowrap !important;
+    }
+
     .hero-date {
       font-size: 21px !important;
       font-weight: 700 !important;
@@ -103,9 +108,40 @@
     }
 
     @media (max-width: 600px) {
+      .hero {
+        min-height: 100svh !important;
+        height: 100svh !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+      }
+
+      .hero-copy {
+        padding: 50px 16px 72px !important;
+        max-width: 440px !important;
+      }
+
+      .hero h1 {
+        font-size: clamp(32px, 8.4vw, 42px) !important;
+        line-height: 1.15 !important;
+        margin: 14px 0 !important;
+        letter-spacing: -0.5px !important;
+      }
+
+      .hero h1 i {
+        font-size: clamp(20px, 5.2vw, 26px) !important;
+        line-height: 1.1 !important;
+        margin: 2px 0 !important;
+      }
+
       .hero-date {
-        font-size: 18px !important;
+        font-size: 17px !important;
         letter-spacing: 1.8px !important;
+      }
+
+      .scroll-cue {
+        bottom: max(14px, env(safe-area-inset-bottom, 14px)) !important;
       }
     }
 
@@ -376,7 +412,7 @@
       Indu; event details are to be announced.</p>
   </noscript>
   <script src="wedding-data.js?v=13"></script>
-  <script src="script.js?v=14"></script>
+  <script src="script.js?v=15"></script>
 </body>
 
 </html>
