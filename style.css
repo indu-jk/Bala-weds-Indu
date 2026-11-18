@@ -774,7 +774,7 @@ a svg {
 }
 
 .event-card {
-    padding: 33px;
+    padding: 44px 33px 36px;
     text-align: center;
     border: 1px solid #cdd2b9;
     background: #f6f5eae6;
@@ -804,7 +804,7 @@ a svg {
 .event-symbol {
     width: 54px;
     height: 40px;
-    margin: 25px auto 14px;
+    margin: 0 auto 16px;
     color: var(--gold)
 }
 
@@ -1862,7 +1862,7 @@ dialog p {
     }
 
     .event-card {
-        padding: 27px 22px 28px
+        padding: 38px 22px 30px
     }
 
     .event-index {
@@ -1873,7 +1873,7 @@ dialog p {
     }
 
     .event-symbol {
-        margin-top: 21px
+        margin-top: 0
     }
 
     .event-card h3 {

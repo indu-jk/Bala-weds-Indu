@@ -86,7 +86,6 @@ function textNode(tag, text, className) { const el = document.createElement(tag)
 if ($('#event-grid')) $('#event-grid').replaceChildren();
 (config.events || []).forEach((event, index) => {
   const card = document.createElement('article'); card.className = 'event-card reveal';
-  card.append(textNode('span', index === 0 ? 'THE SACRED BEGINNING' : 'THE CELEBRATION', 'event-index'));
   const icon = document.createElementNS('http://www.w3.org/2000/svg', 'svg'); icon.classList.add('event-symbol'); icon.setAttribute('aria-hidden', 'true');
   const use = document.createElementNS('http://www.w3.org/2000/svg', 'use'); use.setAttribute('href', index === 0 ? '#lotus' : '#calendar-icon'); icon.append(use); card.append(icon);
   card.append(textNode('h3', event.title), textNode('p', event.subtitle, 'event-subtitle'), textNode('div', '', 'event-separator'));
