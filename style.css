@@ -429,15 +429,20 @@ a svg {
 }
 
 .monogram {
-    font: 500 28px var(--serif);
-    letter-spacing: 3px
+    font: 600 30px var(--serif);
+    letter-spacing: 3px;
+    color: #fff9e6;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.75), 0 1px 3px rgba(0, 0, 0, 0.9);
+    display: inline-flex;
+    align-items: center
 }
 
 .monogram span {
-    font-size: 19px;
+    font-size: 22px;
     font-style: italic;
-    padding: 0 5px;
-    color: #d5b96f
+    padding: 0 6px;
+    color: #ffd778;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8), 0 0 12px rgba(255, 215, 120, 0.5)
 }
 
 .hero-preview {
@@ -472,10 +477,12 @@ a svg {
 }
 
 .hero-kicker {
-    font-size: 10px;
+    font-size: 13px;
+    font-weight: 600;
     letter-spacing: 4px;
-    color: #e2ca8e;
-    display: block
+    color: #fff4d2;
+    display: block;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9), 0 0 16px rgba(0, 0, 0, 0.6)
 }
 
 .hero h1 {
@@ -491,10 +498,11 @@ a svg {
 }
 
 .hero h1 i {
-    font: italic 40px/1.3 var(--serif);
-    color: #e1c580;
+    font: italic 48px/1.3 var(--serif);
+    color: #ffd778;
     display: block;
-    margin: 4px 0
+    margin: 4px 0;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9), 0 0 12px rgba(255, 215, 120, 0.6)
 }
 
 .name-line>span,
@@ -526,37 +534,43 @@ a svg {
 }
 
 .hero-location {
-    font-size: 11px;
-    letter-spacing: 1.6px;
-    color: #e6d8b4;
-    margin-top: 9px
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1.8px;
+    color: #fff5d6;
+    margin-top: 9px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9), 0 0 14px rgba(0, 0, 0, 0.6)
 }
 
 .hero-verse {
     font: italic 23px/1.5 var(--serif);
-    color: #e3d09b;
-    margin-top: 21px
+    color: #fff5d6;
+    margin-top: 21px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85)
 }
 
 .scroll-cue {
     position: absolute;
     bottom: 96px;
     text-align: center;
-    font-size: 7px;
-    letter-spacing: 2.1px;
-    color: #e4d9b8;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2.8px;
+    color: #fff9e6;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px
+    gap: 10px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95), 0 0 12px rgba(0, 0, 0, 0.7)
 }
 
 .scroll-cue>i {
-    width: 1px;
+    width: 2px;
     height: 28px;
-    background: #e5d4a855;
+    background: rgba(255, 217, 125, 0.35);
     position: relative;
-    overflow: hidden
+    overflow: hidden;
+    border-radius: 1px
 }
 
 .scroll-cue>i::after {
@@ -566,7 +580,7 @@ a svg {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #e4c78b;
+    background: #ffd778;
     animation: scroll-line 2.2s infinite
 }
 
@@ -1610,7 +1624,7 @@ dialog p {
     }
 
     .monogram {
-        font-size: 25px
+        font-size: 28px
     }
 
     .hero-share {
@@ -1627,9 +1641,12 @@ dialog p {
     }
 
     .hero-kicker {
-        font-size: 8px;
-        letter-spacing: 2.5px;
-        margin-bottom: 6px
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 2.8px;
+        color: #fff4d2;
+        margin-bottom: 6px;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9)
     }
 
     .hero h1 {
@@ -1641,29 +1658,37 @@ dialog p {
     }
 
     .hero h1 i {
-        font-size: clamp(20px, 5.2vw, 26px);
-        line-height: 1.1;
-        margin: 2px 0
+        font-size: clamp(26px, 6.2vw, 32px);
+        line-height: 1.15;
+        margin: 3px 0;
+        color: #ffd778;
+        text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9), 0 0 12px rgba(255, 215, 120, 0.6)
     }
 
     .hero-date {
         font-size: 17px !important;
         font-weight: 700 !important;
-        letter-spacing: 2px !important
+        letter-spacing: 2px !important;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9) !important
     }
 
     .hero-location {
-        font-size: 11px;
-        letter-spacing: 1.2px;
-        max-width: 300px;
-        margin: 7px auto 0
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 1.4px;
+        color: #fff5d6;
+        max-width: 320px;
+        margin: 7px auto 0;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9)
     }
 
     .hero-verse {
         font-size: clamp(15px, 3.8vw, 17px);
         line-height: 1.35;
+        color: #fff5d6;
         max-width: 300px;
-        margin: 12px auto 0
+        margin: 12px auto 0;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9)
     }
 
     .hero-rule {
@@ -1682,14 +1707,19 @@ dialog p {
         bottom: max(14px, env(safe-area-inset-bottom, 14px));
         left: 50%;
         transform: translateX(-50%);
-        font-size: 7px;
-        letter-spacing: 2px;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 2.2px;
+        color: #fff9e6;
         gap: 6px;
-        z-index: 10
+        z-index: 10;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95)
     }
 
     .scroll-cue>i {
-        height: 18px
+        height: 18px;
+        width: 2px;
+        background: rgba(255, 217, 125, 0.35)
     }
 
     .section {
@@ -1972,7 +2002,7 @@ dialog p {
     }
 
     .hero h1 i {
-        font-size: 19px
+        font-size: 24px
     }
 
     .hero-copy {
@@ -1980,8 +2010,9 @@ dialog p {
     }
 
     .hero-kicker {
-        font-size: 7px;
-        letter-spacing: 2px
+        font-size: 10px;
+        letter-spacing: 2.2px;
+        font-weight: 600
     }
 
     .hero-verse {
