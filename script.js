@@ -93,7 +93,7 @@ if ($('#event-grid')) $('#event-grid').replaceChildren();
   const list = document.createElement('dl');
   [['DATE', formatDate(event.date) || 'To be announced'], ['TIME', event.time || 'The auspicious time, coming soon'], ['VENUE', event.venue || 'A beautiful place, to be revealed']].forEach(([label, value]) => { const wrapper = document.createElement('div'); wrapper.append(textNode('dt', label), textNode('dd', value)); list.append(wrapper); });
   if (event.address) list.append(textNode('dd', event.address, 'venue-address')); card.append(list);
-  const action = textNode('button', safeUrl(event.mapUrl) && event.mapUrl ? 'View directions ↗' : 'Details coming soon ↗', 'button'); action.type = 'button'; action.setAttribute('aria-label', `${event.title}: ${event.mapUrl ? 'view directions' : 'details coming soon'}`);
+  const action = textNode('button', safeUrl(event.mapUrl) && event.mapUrl ? 'View Directions ↗' : 'Details coming soon ↗', 'button'); action.type = 'button'; action.setAttribute('aria-label', `${event.title}: ${event.mapUrl ? 'view directions' : 'details coming soon'}`);
   action.addEventListener('click', () => { const url = event.mapUrl && safeUrl(event.mapUrl); if (url) window.open(url, '_blank', 'noopener,noreferrer'); else showDetails(`The date, time, venue and directions for our ${event.title.toLowerCase()} will be added when they are confirmed. This is a design preview. We look forward to sharing the beautiful details with you.`, action); }); card.append(action); $('#event-grid').append(card);
 });
 $('#calendar-button').addEventListener('click', event => {
