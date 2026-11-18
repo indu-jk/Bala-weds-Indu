@@ -116,10 +116,10 @@ a svg {
 }
 
 .eyebrow {
-    font-size: 10px;
-    letter-spacing: 2.1px;
-    font-weight: 500;
-    color: #958158;
+    font-size: 11px;
+    letter-spacing: 2.2px;
+    font-weight: 600;
+    color: #7a5a22;
     display: block
 }
 
@@ -621,11 +621,12 @@ a svg {
 }
 
 .section-heading>p {
-    font-size: 13px;
-    line-height: 1.9;
-    color: var(--muted);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.8;
+    color: #3b4e3f;
     margin: 17px auto 0;
-    max-width: 500px
+    max-width: 520px
 }
 
 .couple-section {
@@ -716,9 +717,12 @@ a svg {
 }
 
 .person-role {
-    font-size: 8px;
-    letter-spacing: 2.5px;
-    color: #9c8a65
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2.4px;
+    color: #7a5a22;
+    display: inline-block;
+    text-transform: uppercase
 }
 
 .person h3 {
@@ -728,22 +732,22 @@ a svg {
 }
 
 .person>p {
-    font: 400 16px/1.7 var(--serif);
-    color: #879073
+    font: 500 18px/1.6 var(--serif);
+    color: #24382c
 }
 
 .couple-ampersand {
     font: italic 70px var(--serif);
-    color: #b59b63;
+    color: #8c6a28;
     text-align: center;
     align-self: center
 }
 
 .couple-ampersand>span {
     display: block;
-    font: italic 17px/1.4 var(--serif);
+    font: italic 500 17px/1.4 var(--serif);
     margin-top: 10px;
-    color: #9aa083
+    color: #384d3b
 }
 
 .celebrations-section {
@@ -911,7 +915,7 @@ a svg {
 }
 
 .date-content .eyebrow {
-    color: #c6b17c
+    color: #f2db9b
 }
 
 .date-content h2 {
@@ -1737,14 +1741,17 @@ dialog p {
     }
 
     .eyebrow {
-        font-size: 8px;
-        letter-spacing: 1.5px;
-        line-height: 1.9
+        font-size: 10px;
+        letter-spacing: 1.8px;
+        font-weight: 600;
+        line-height: 1.8
     }
 
     .section-heading>p {
-        font-size: 12px;
-        line-height: 1.9;
+        font-size: 13.5px;
+        line-height: 1.7;
+        font-weight: 500;
+        color: #3b4e3f;
         max-width: 330px;
         margin-top: 15px
     }
@@ -1767,23 +1774,34 @@ dialog p {
         border-radius: 50%
     }
 
+    .person-role {
+        font-size: 10px;
+        letter-spacing: 2px;
+        font-weight: 600
+    }
+
     .person h3 {
         font-size: 37px
     }
 
     .person>p {
-        font-size: 16px
+        font-size: 16.5px;
+        font-weight: 500;
+        color: #24382c
     }
 
     .couple-ampersand {
         font-size: 49px;
+        color: #8c6a28;
         line-height: 1;
         margin: -5px 0
     }
 
     .couple-ampersand>span {
-        font-size: 14px;
+        font-size: 15px;
+        font-weight: 500;
         line-height: 1.4;
+        color: #384d3b;
         display: inline-block;
         text-align: left;
         padding-left: 17px;
@@ -2030,6 +2048,12 @@ dialog p {
     .welcome .eyebrow {
         font-size: 10px;
         letter-spacing: 1.4px;
+        font-weight: 600
+    }
+
+    .eyebrow {
+        font-size: 9.5px;
+        letter-spacing: 1.5px;
         font-weight: 600
     }
 
