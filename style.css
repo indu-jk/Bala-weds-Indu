@@ -792,11 +792,13 @@ a svg {
 }
 
 .event-index {
-    font-size: 8px;
-    letter-spacing: 2px;
-    color: #a29168;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2.4px;
+    color: #7a5a22;
     display: block;
-    margin-top: 22px
+    margin-top: 22px;
+    text-transform: uppercase
 }
 
 .event-symbol {
@@ -813,15 +815,15 @@ a svg {
 }
 
 .event-subtitle {
-    font: italic 19px/1.5 var(--serif);
-    color: #92977d;
+    font: italic 500 19px/1.5 var(--serif);
+    color: #384e3f;
     margin-top: 13px
 }
 
 .event-separator {
-    height: 1px;
-    width: 40px;
-    background: #cbbb8d;
+    height: 1.5px;
+    width: 48px;
+    background: #bfa872;
     margin: 23px auto
 }
 
@@ -832,35 +834,48 @@ a svg {
 }
 
 .event-card dt {
-    font-size: 8px;
-    letter-spacing: 1.8px;
-    color: #a49573;
-    margin-bottom: 5px
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #7a5a22;
+    margin-bottom: 5px;
+    text-transform: uppercase
 }
 
 .event-card dd {
     margin: 0;
-    color: #687859;
-    font-size: 13px;
-    line-height: 1.7
+    color: #1e3328;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6
 }
 
 .event-card .venue-address {
-    font-size: 12px
+    font-size: 14px;
+    color: #2d4236
 }
 
 .event-card .button {
     position: relative;
     margin-top: 26px;
-    font-size: 11px;
-    min-height: 40px;
-    border-color: #c5ceb8;
-    color: var(--green);
-    padding: 9px 17px
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    min-height: 42px;
+    border: 1.5px solid #7a5a22;
+    color: #183e32;
+    background: #fdfbf5;
+    border-radius: 4px;
+    padding: 10px 22px;
+    box-shadow: 0 2px 8px rgba(24, 62, 50, 0.08);
+    transition: all 0.25s ease;
+    cursor: pointer
 }
 
 .event-card .button:hover {
-    background: #e8edde
+    background: #183e32;
+    color: #fff9e6;
+    border-color: #183e32
 }
 
 .section-footnote {
@@ -1818,10 +1833,13 @@ dialog p {
     }
 
     .event-card {
-        padding: 27px 25px 28px
+        padding: 27px 22px 28px
     }
 
     .event-index {
+        font-size: 10px;
+        letter-spacing: 2px;
+        font-weight: 600;
         margin-top: 18px
     }
 
@@ -1833,12 +1851,30 @@ dialog p {
         font-size: 33px
     }
 
+    .event-subtitle {
+        font-size: 17px;
+        font-weight: 500;
+        color: #384e3f
+    }
+
+    .event-card dt {
+        font-size: 10px;
+        letter-spacing: 1.8px;
+        font-weight: 600;
+        color: #7a5a22
+    }
+
     .event-card dd {
-        font-size: 13px
+        font-size: 15px;
+        font-weight: 500;
+        color: #1e3328
     }
 
     .event-card .button {
-        font-size: 12px
+        font-size: 12.5px;
+        font-weight: 600;
+        min-height: 40px;
+        padding: 9px 20px
     }
 
     .section-footnote {
