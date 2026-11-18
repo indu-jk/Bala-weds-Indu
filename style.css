@@ -969,27 +969,53 @@ a svg {
 
 .countdown span {
     display: block;
-    font-size: 8px;
-    letter-spacing: 2px;
-    margin-top: 12px;
-    color: #b7bd9f
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2.2px;
+    margin-top: 10px;
+    color: #f2db9b
 }
 
 .countdown>i {
-    font: 400 26px var(--serif);
-    color: #9c9d71;
+    font: 400 28px var(--serif);
+    color: #ffd778;
     transform: translateY(-12px)
 }
 
 .date-content .countdown-note {
-    font: 12px/1.9 var(--sans);
-    color: #aeb99d;
-    max-width: 430px;
-    margin: 23px auto 25px
+    font: 500 15px/1.8 var(--sans);
+    color: #fff3d1;
+    max-width: 460px;
+    margin: 24px auto 25px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4)
 }
 
 .date-content .button {
-    font-size: 11px
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    border: 1.5px solid #d4af37;
+    color: #fff9e6;
+    background: rgba(212, 175, 55, 0.15);
+    padding: 11px 24px;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.25s ease
+}
+
+.date-content .button svg {
+    stroke: #ffd778;
+    color: #ffd778
+}
+
+.date-content .button:hover {
+    background: #d4af37;
+    color: #183e32
+}
+
+.date-content .button:hover svg {
+    stroke: #183e32;
+    color: #183e32
 }
 
 .letter-section {
@@ -1027,9 +1053,9 @@ a svg {
 }
 
 .letter-paper>p {
-    font: 400 19px/1.9 var(--serif);
-    color: #77836c;
-    margin-top: 16px
+    font: 500 20px/1.8 var(--serif);
+    color: #22382b;
+    margin-top: 18px
 }
 
 .letter-signature {
@@ -1038,20 +1064,21 @@ a svg {
 
 .letter-signature>span {
     display: block;
-    font-size: 10px;
-    letter-spacing: .5px;
-    color: #94997d
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .8px;
+    color: #7a5a22
 }
 
 .letter-signature>strong {
-    font: 400 34px var(--serif);
+    font: 500 36px var(--serif);
     display: block;
-    color: #526b4a;
-    margin-top: 7px
+    color: #183e32;
+    margin-top: 8px
 }
 
 .letter-signature i {
-    color: #b29c69;
+    color: #9e7d3b;
     font-weight: 400
 }
 
@@ -1254,17 +1281,19 @@ a svg {
 
 .site-footer {
     text-align: center;
-    padding: 25px 20px 25px;
-    color: #9ba18a;
-    font-size: 10px;
-    line-height: 1.9
+    padding: 28px 20px 28px;
+    color: #3b4e3f;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.8;
+    letter-spacing: .5px
 }
 
-.site-footer>span {
-    font-size: 8px;
-    letter-spacing: 1.3px;
-    display: block;
-    margin-top: 6px
+.site-footer>p {
+    margin: 0;
+    color: #3b4e3f;
+    font-size: 13px;
+    font-weight: 500
 }
 
 .bottom-nav {
@@ -1909,18 +1938,29 @@ dialog p {
     }
 
     .countdown span {
-        font-size: 7px;
-        letter-spacing: 1.2px
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 1.6px;
+        color: #f2db9b
     }
 
     .countdown>i {
-        font-size: 23px
+        font-size: 23px;
+        color: #ffd778
     }
 
     .date-content .countdown-note {
-        font-size: 11px;
-        max-width: 290px;
-        line-height: 1.9
+        font-size: 13.5px;
+        font-weight: 500;
+        max-width: 320px;
+        line-height: 1.7;
+        color: #fff3d1
+    }
+
+    .date-content .button {
+        font-size: 12.5px;
+        font-weight: 600;
+        padding: 10px 22px
     }
 
     .letter-paper {
@@ -1934,7 +1974,16 @@ dialog p {
 
     .letter-paper>p {
         font-size: 18px;
-        line-height: 1.8
+        font-weight: 500;
+        line-height: 1.7;
+        color: #22382b
+    }
+
+    .letter-signature>span {
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: .6px;
+        color: #7a5a22
     }
 
     .letter-signature>strong {
@@ -2028,13 +2077,9 @@ dialog p {
     }
 
     .site-footer {
-        font-size: 10px;
-        padding-bottom: 25px
-    }
-
-    .site-footer>span {
-        font-size: 7px;
-        letter-spacing: .8px
+        font-size: 12px;
+        padding-bottom: 25px;
+        color: #3b4e3f
     }
 
     dialog {
